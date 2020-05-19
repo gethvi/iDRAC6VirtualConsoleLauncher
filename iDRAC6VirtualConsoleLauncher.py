@@ -34,8 +34,6 @@ def main():
     else:
         args.port = 5900
 
-    print(sys.path[0])
-
     avctvm_url = 'http://{0}/software/avctVM{1}.jar'.format(args.host, PLATFORM)
     avctkvmio_url = 'http://{0}/software/avctKVMIO{1}.jar'.format(args.host, PLATFORM)
     avctkvm_url = 'http://{0}/software/avctKVM.jar'.format(args.host)

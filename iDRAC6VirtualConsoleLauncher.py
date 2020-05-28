@@ -83,7 +83,7 @@ if __name__ == '__main__':
         BINARYEX = '.exe'
     elif sys.platform.startswith('darwin'):
         PLATFORM = 'Mac64'
-        DYNLIBEX = '.so'
+        DYNLIBEX = '.jnilib'
         BINARYEX = ''
     else:
         print('Unsupported platform.')

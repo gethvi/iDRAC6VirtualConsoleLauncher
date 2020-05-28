@@ -6,7 +6,11 @@ Tested on Debian Buster and Windows 10.
 MacOS version is completely untested, but it might work.
 
 ## Installation
-To run the Virtual Console, you need to download old Java Runtime Environment.
+To run the Virtual Console, you need to download old Java Runtime Environment 7u80 from Oracle:
+
+https://www.oracle.com/java/technologies/javase/javase7-archive-downloads.html
+
+Below are direct links that only work when you log in and accept Oracle license agreement.
 
 **Windows:**
 [jre-7u80-windows-x64.tar.gz](https://download.oracle.com/otn/java/jdk/7u80-b15/jre-7u80-windows-x64.tar.gz)

@@ -1,9 +1,7 @@
 # iDRAC 6 Virtual Console Launcher
-Python 3 launcher for iDRAC 6 Virtual Console.
+Python 3 launcher for iDRAC 6 Virtual Console (including Virtual Media).
 
-Tested on Debian Buster and Windows 10.
-
-MacOS version is completely untested, but it might work.
+Tested on Debian Buster, Windows 10 and MacOS Catalina.
 
 ## Installation
 To run the Virtual Console, you need to download old Java Runtime Environment 7u80 from Oracle:

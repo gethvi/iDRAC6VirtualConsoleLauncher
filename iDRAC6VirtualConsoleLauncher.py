@@ -40,7 +40,7 @@ def main():
 
     pwd = pathlib.Path(sys.path[0])
     hostdir = pwd.joinpath(args.host)
-    java = pwd.joinpath('jre').joinpath('bin').joinpath('java'+BINARYEX)
+    java = pwd.joinpath('jre').joinpath('bin').joinpath('java' + BINARYEX)
 
     libdir = hostdir.joinpath('lib')
     libdir.mkdir(parents=True, exist_ok=True)
@@ -48,9 +48,9 @@ def main():
     get_libraries(url=avctvm_url, path=libdir)
     get_libraries(url=avctkvmio_url, path=libdir)
 
+    print('Downloading: avctKVM.jar')
     response = requests.get(avctkvm_url)
     with open('avctKVM.jar', 'w+b') as file:
-        print('Downloading: avctKVM.jar')
         file.write(response.content)
 
     if java.exists():

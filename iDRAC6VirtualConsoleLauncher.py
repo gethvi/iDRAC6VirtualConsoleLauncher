@@ -9,7 +9,7 @@ import pathlib
 import sys
 import urllib3
 import subprocess
-
+import re
 
 def get_libraries(url, path):
     response = requests.get(url)
@@ -39,7 +39,8 @@ def main():
     avctkvm_url = 'http://{0}/software/avctKVM.jar'.format(args.host)
 
     pwd = pathlib.Path(sys.path[0])
-    hostdir = pwd.joinpath(args.host)
+    # Hostdir is a striped version of host, because some chars can avoid LD load within java - as example IPv6 address with []
+    hostdir = pwd.joinpath('host_' + re.sub('[^a-zA-Z0-9]+', '', args.host))
     java = pwd.joinpath('jre').joinpath('bin').joinpath('java' + BINARYEX)
 
     libdir = hostdir.joinpath('lib')
